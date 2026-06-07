@@ -6,10 +6,10 @@ return {
     priority = 1000,
     opts = {
       colors = {
-        bg         = "#0a0a0f",
-        dark_bg    = "#08080b",
-        darker_bg  = "#050508",
-        lighter_bg = "#232327",
+        bg         = "#000000",
+        dark_bg    = "#000000",
+        darker_bg  = "#000000",
+        lighter_bg = "#1a1a1a",
 
         fg         = "#cdd6f4",
         dark_fg    = "#9aa1b7",
@@ -36,18 +36,12 @@ return {
         accent               = "#89b4fa",
         cursor               = "#cdd6f4",
         foreground           = "#cdd6f4",
-        background           = "#0a0a0f",
-        selection             = "#232327",
+        background           = "#000000",
+        selection             = "#1a1a1a",
         selection_foreground = "#cdd6f4",
-        selection_background = "#232327",
+        selection_background = "#1a1a1a",
       },
     },
-    -- set up hot reload
-    config = function(_, opts)
-      require("aether").setup(opts)
-      vim.cmd.colorscheme("aether")
-      require("aether.hotreload").setup()
-    end,
   },
   {
     "LazyVim/LazyVim",
